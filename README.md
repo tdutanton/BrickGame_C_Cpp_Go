@@ -1,9 +1,9 @@
-![Screenshot](./readme_imgs/race_logo.jpg)  
+![Screenshot](./readme_imgs/race_logo_r.jpg)  
 
 # BrickGame_C_Cpp_Go
 Educational project - implementation of three classic games on C, C++ and Golang
 
-![Screenshot](./readme_imgs/race_web.jpg)  
+![Screenshot](./readme_imgs/race_web_r.jpg)  
 
 ![Screenshot](./readme_imgs/tetris_qt.jpg)  
 
