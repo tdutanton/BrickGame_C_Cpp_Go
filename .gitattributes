@@ -1,0 +1,30 @@
+# --- Core languages (game logic & backend) ---
+*.cpp linguist-language=C++
+*.h   linguist-language=C++
+*.c   linguist-language=C
+*.go  linguist-language=Go
+*.js linguist-language=JavaScript
+
+# --- Web frontend ---
+*.css  linguist-documentation
+*.html linguist-documentation
+
+# --- Documentation ---
+*.tex linguist-documentation
+documentation_release/** linguist-documentation
+
+# --- Assets ---
+*.[pP][nN][gG] linguist-documentation
+*.[jJ][pP][gG] linguist-documentation
+
+# --- Qt specific ---
+*.ui  linguist-documentation
+*.qrc linguist-documentation
+*.pro linguist-documentation
+*.pri linguist-documentation
+
+# --- Build/config ---
+Makefile linguist-documentation
+*.yaml linguist-documentation
+*.yml  linguist-documentation
+*.json linguist-documentation
