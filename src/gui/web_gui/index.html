@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/" />
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/game.js" type="module" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrickGame_v3.0</title>
+</head>
+
+<body>
+    <h1>BrickGame_v3.0</h1>
+
+    <div id="game-selector" class="game-screen">
+        <h2>Выберите игру:</h2>
+        <div id="games-list" class="games-list"></div>
+    </div>
+
+    <div id="game-screen" class="game-screen hidden">
+        <div id="tetris">
+            <div id="game-board"></div>
+            <div id="side-panel" class="dashboard-text">
+                <div class="stats">
+                    <div class="stat-item">
+                        <p>HIGH SCORE: <span id="high-score-value">0</span></p>
+                    </div>
+                    <div class="stat-item">
+                        <p>SCORE: <span id="score-value">0</span></p>
+                    </div>
+                    <div class="stat-item">
+                        <p>LEVEL: <span id="level-value">1</span></p>
+                    </div>
+                    <div class="stat-item">
+                        <p>SPEED: <span id="speed-value">500</span></p>
+                    </div>
+                </div>
+                <div id="next-figure-container">
+                    <h3>NEXT FIGURE</h3>
+                    <div id="next-figure"></div>
+                </div>
+                <div id="pause-overlay" class="overlay hidden">
+                    <h2>PAUSE</h2>
+                </div>
+                <button id="start-btn">Start Game</button>
+                <button id="back-btn">Назад к выбору</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

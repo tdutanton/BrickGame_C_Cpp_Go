@@ -1,0 +1,47 @@
+{
+   Go runtime false positives
+   Memcheck:Cond
+   ...
+   fun:runtime.*
+}
+
+{
+   Go stack false positives
+   Memcheck:Addr8
+   ...
+   fun:runtime.*
+}
+
+{
+   Go reflect.DeepEqual false positives
+   Memcheck:Addr8
+   ...
+   fun:reflect.deepValueEqual
+}
+
+{
+   testify false positives
+   Memcheck:Addr8
+   ...
+   fun:github.com/stretchr/testify/assert.*
+}
+{
+   Memcheck:Addr8
+   fun:runtime.*
+   fun:reflect.*
+   fun:sync.*
+   fun:syscall.*
+   fun:internal/poll.*
+   fun:os/signal.*
+   fun:runtime_cgo.*
+   fun:runtime.asmcgocall.*
+   fun:runtime.morestack.*
+   fun:runtime.newstack.*
+   fun:runtime.systemstack.*
+   fun:runtime.adjustctxt.*
+   fun:runtime.growslice.*
+   fun:runtime.convT64.*
+   fun:runtime.mstart.*
+   fun:runtime.rt0_go.*
+   obj:*
+}
