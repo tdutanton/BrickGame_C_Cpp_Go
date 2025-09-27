@@ -54,78 +54,78 @@ This design ensures modularity, portability, and consistent cross-interface game
 
 ## 📂 Project Structure
 
-.
-├── Doxyfile
-├── Makefile
-├── brick_game
-│   ├── race
-│   │   ├── s21_backend_race.go
-│   │   ├── s21_backend_race.h
-│   │   └── s21_backend_race_test.go
-│   ├── s21_brick_game_cli.c
-│   ├── server
-│   │   ├── cmd
-│   │   │   ├── main_race.go
-│   │   │   ├── main_snake.go
-│   │   │   └── main_tetris.go
-│   │   ├── game_factory.go
-│   │   ├── game_interface.go
-│   │   ├── handlers.go
-│   │   ├── models.go
-│   │   ├── race
-│   │   │   └── race.go
-│   │   ├── snake
-│   │   │   └── snake.go
-│   │   └── tetris
-│   │       └── tetris.go
-│   ├── snake
-│   │   ├── s21_backend_snake.cpp
-│   │   ├── s21_backend_snake.h
-│   │   └── s21_snake_wrap.h
-│   └── tetris
-│       ├── s21_backend_tetris.c
-│       └── s21_backend_tetris.h
-├── dvi_readme.md
-├── fsm_scheme.jpg
-├── fsm_scheme_race.jpg
-├── fsm_scheme_snake.jpg
-├── go.mod
-├── go.sum
-├── gui
-│   ├── cli
-│   │   ├── s21_frontend.c
-│   │   └── s21_frontend.h
-│   ├── desktop
-│   │   ├── Makefile
-│   │   ├── main.cpp
-│   │   ├── mainwindow.cpp
-│   │   ├── mainwindow.h
-│   │   ├── mainwindow.ui
-│   │   ├── s21_brickgame_desktop.pro
-│   │   ├── s21_brickgame_desktop.pro.user
-│   │   ├── s21_field_window.cpp
-│   │   ├── s21_field_window.h
-│   │   ├── s21_next_field_window.cpp
-│   │   └── s21_next_field_window.h
-│   └── web_gui
-│       ├── game.js
-│       ├── index.html
-│       ├── readme.md
-│       ├── src
-│       │   ├── config.js
-│       │   ├── game-board.js
-│       │   ├── tile.js
-│       │   └── utils.js
-│       └── styles.css
-├── main_menu.cpp
-├── tests
-│   ├── s21_snake_test.cpp
-│   ├── s21_snake_test.h
-│   ├── s21_tetris_test.c
-│   ├── s21_tetris_test.h
-│   ├── test_s21_snake_backend.cpp
-│   └── test_s21_tetris_backend.c
-└── valgrind.supp
+.  
+├── Doxyfile  
+├── Makefile  
+├── brick_game  
+│   ├── race  
+│   │   ├── s21_backend_race.go  
+│   │   ├── s21_backend_race.h  
+│   │   └── s21_backend_race_test.go  
+│   ├── s21_brick_game_cli.c  
+│   ├── server  
+│   │   ├── cmd  
+│   │   │   ├── main_race.go  
+│   │   │   ├── main_snake.go  
+│   │   │   └── main_tetris.go  
+│   │   ├── game_factory.go  
+│   │   ├── game_interface.go  
+│   │   ├── handlers.go  
+│   │   ├── models.go  
+│   │   ├── race  
+│   │   │   └── race.go  
+│   │   ├── snake  
+│   │   │   └── snake.go  
+│   │   └── tetris  
+│   │       └── tetris.go  
+│   ├── snake  
+│   │   ├── s21_backend_snake.cpp  
+│   │   ├── s21_backend_snake.h  
+│   │   └── s21_snake_wrap.h  
+│   └── tetris  
+│       ├── s21_backend_tetris.c  
+│       └── s21_backend_tetris.h  
+├── dvi_readme.md  
+├── fsm_scheme.jpg  
+├── fsm_scheme_race.jpg  
+├── fsm_scheme_snake.jpg  
+├── go.mod  
+├── go.sum  
+├── gui  
+│   ├── cli  
+│   │   ├── s21_frontend.c  
+│   │   └── s21_frontend.h  
+│   ├── desktop  
+│   │   ├── Makefile  
+│   │   ├── main.cpp  
+│   │   ├── mainwindow.cpp  
+│   │   ├── mainwindow.h  
+│   │   ├── mainwindow.ui  
+│   │   ├── s21_brickgame_desktop.pro  
+│   │   ├── s21_brickgame_desktop.pro.user  
+│   │   ├── s21_field_window.cpp  
+│   │   ├── s21_field_window.h  
+│   │   ├── s21_next_field_window.cpp  
+│   │   └── s21_next_field_window.h  
+│   └── web_gui  
+│       ├── game.js  
+│       ├── index.html  
+│       ├── readme.md  
+│       ├── src  
+│       │   ├── config.js  
+│       │   ├── game-board.js  
+│       │   ├── tile.js  
+│       │   └── utils.js  
+│       └── styles.css  
+├── main_menu.cpp  
+├── tests  
+│   ├── s21_snake_test.cpp  
+│   ├── s21_snake_test.h  
+│   ├── s21_tetris_test.c  
+│   ├── s21_tetris_test.h  
+│   ├── test_s21_snake_backend.cpp  
+│   └── test_s21_tetris_backend.c  
+└── valgrind.supp  
 
 
 ---
